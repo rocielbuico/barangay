@@ -26,8 +26,7 @@ class BrgyusersController extends AppController {
 
     function view($id = null) {
         $this->loadModel('Brgyuser');
-        $this->set('brgyusers',$this->Brgyuser->find('all'));
-        $this->set('brgyid',$id);
+        $this->set('brgyuser',$this->Brgyuser->find($id));
         
     }
 
